@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistema e-carnet</title>
+	<link rel="icon" href="../images/Logo_SENA.png">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="../css/templatereg.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div class="contenedor">
+		<header>
+			<div class="logo">
+				<img src="../images/logo.png" alt="">
+			</div>
+			<nav class="menu" style="width: 48%;">
+				<a href="../index.html">Inicio</a>
+				<a href="login.html">Registro</a>
+				<a href="#">Invitado</a>
+			</nav>
+		</header>
+		<section class="main">
+			<article>
+				<div class="titulo">
+                    <h1>Sistema para el control de ingreso de elementos</h1>
+                    <br>
+                </div>
+			</article>
+			<article>
+				<form id="fregelemento">
+					<div class="form-group">
+						<p>
+							Favor registrar el elemento a ingresar a través de la
+							plataforma e-control.
+						</p>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Opción</label>
+						<select class="form-control" id="Select_opc">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Tipo de documento (Seleccione tipo de documento)</label>
+						<select class="form-control" id="Selectdoc">
+						  <option>Ti</option>
+						  <option>CC</option>
+						  <option>CE</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Numero de documento: </label>
+						<input type="number" class="form-control" id="Inputdocumento" placeholder="Ingrese numero de documento">
+					</div>
+                    <div class="form-group">
+						<label for="exampleFormControlSelect1">Tipo de elemento</label>
+						<select class="form-control" id="Select_tipo">
+						  <option>Bicicleta</option>
+						  <option>Portatil</option>
+						  <option>Tableta Grafica</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Marca: </label>
+						<input type="text" class="form-control" id="Inputmarca" placeholder="Ingrese la marca">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">No. de referencia: </label>
+						<input type="text" class="form-control" id="Inputref" placeholder="Ingrese referencia o serial ">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="Inputfecha" style="visibility:hidden">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="Inputestado" style="visibility:hidden">
+					</div>
+
+					<div class="boton">
+						<button class="btn btn-primary" id="btn-save">Guardar</button>
+						<a href="Register.html" id="btn-cancel">Cancelar</a>
+					</div>
+					
+				</form>
+			</article>
+		</section>
+		<footer>
+			<div class="autor">
+				<p>Creado por Julian Ramírez </p>
+			</div>
+			<div class="redes-sociales">
+				<a href="#">Facebook</a>
+				<a href="#">Twitter</a>
+			</div>
+		</footer>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="module" src="../controllers/regelemento.js"></script>
+</body>
+</html>
