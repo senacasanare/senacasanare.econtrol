@@ -27,8 +27,9 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore()
 
-export const regaprendiz=(tdoc,numdoc,nom,rh,ficha,titulada,jornada,sede,perfil)=>{
+export const regaprendiz=(trol,tdoc,numdoc,nom,rh,ficha,titulada,jornada,sede,perfil)=>{
     setDoc(doc(db,'Aprendiz',numdoc),{
+        trol,
         tdoc,
         numdoc,
         nom,
