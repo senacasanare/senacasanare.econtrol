@@ -76,11 +76,22 @@ header .menu a:hover {
 	text-align: center;
 }
 
-.main article .card img{
-	float: center;
-	margin: 5px;
-	height: 128px;
+.main .container .card .rol{
+	font-weight: bold;
+	font-size: calc(1em + 1vw);
 }
+.main .container .card img{
+	margin:auto;
+	display:block;
+	max-width: 50%;
+ 	max-height: 50%;
+}
+
+.main .container .card .imglogo{
+	max-width: 20%;
+ 	max-height: 20%;
+}
+
 .main article .thumb {
 	margin-bottom: 20px;
 }
