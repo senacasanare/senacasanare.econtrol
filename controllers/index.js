@@ -57,7 +57,7 @@ async function verification()
           <p>Ficha: ${docSnap.data().ficha} ${docSnap.data().titulada}</p>
           <p>Regional: Casanare</p>
         </div>
-        <img src="../images/logo_SENA.png" class="imglogo">
+        <img src="../images/Logo_SENA.png" class="imglogo">
       </div>  
     `
     contenedor.innerHTML=html
