@@ -49,13 +49,15 @@ async function verification()
       let html=""
       html += `
       <div class="card">
-        <img src="${docSnap.data().perfil}" class="card-img-top" alt="...">
+        <img src="${docSnap.data().perfil}" class="card-img-top">
+        <h5 class="rol" >${docSnap.data().trol}</h5>
         <div class="card-body">
           <h5 class="card-title">${docSnap.data().nom}</h5>
           <p class="card-text">${docSnap.data().tdoc} ${docSnap.data().numdoc}</p>
           <p>Ficha: ${docSnap.data().ficha} ${docSnap.data().titulada}</p>
           <p>Regional: Casanare</p>
         </div>
+        <img src="../images/logo_SENA.png" class="imglogo">
       </div>  
     `
     contenedor.innerHTML=html
