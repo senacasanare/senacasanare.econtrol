@@ -9,6 +9,7 @@ const formulario = document.getElementById('fregistro')
 formulario.addEventListener('submit',(e) => {
     e.preventDefault()
 
+    const rol = formulario['Selectrol'] 
     const doc = formulario['Selectdoc']
     const ndoc= formulario['Inputdocumento']
     const nombre = formulario['Inputnombre']
@@ -20,6 +21,7 @@ formulario.addEventListener('submit',(e) => {
     const avatar = formulario['response']
 
     regaprendiz(
+        rol.value,
         doc.value,
         ndoc.value,
         nombre.value,
